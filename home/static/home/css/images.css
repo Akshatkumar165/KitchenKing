@@ -1,0 +1,260 @@
+body{
+ background-color: rgb(255, 255, 255);
+
+  
+}
+.background {
+  
+  position:absolute;
+  display:block;
+  top : 0;
+  left: 0; 
+  z-index: 0;
+  }
+/* -------navbar------- */
+nav{
+  background-color: rgb(252, 113, 48);
+  font-size: 1.2rem;
+}
+nav .navbar-brand{
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.form_box{
+  text-align: center;
+}
+nav .navbar-nav{
+  margin-right: 3%;
+}
+.ion-ios-cart{
+  color: white;
+  font-size: 1.5rem;
+}
+nav .navbar-nav li{
+  margin-right: 10px;
+}  
+.cart-value{
+  padding: 2px;
+  border:1px solid white;
+  border-radius:50% ;
+  background-color: white;
+  color: black;
+  margin-left: 5px;
+  margin-right: 15px;
+}
+.user{
+  font-size: 1.5rem;
+  color: white;
+  font-style: italic;
+}
+.firstname{
+  margin-left: 5px;
+}
+ .itempage{
+margin-top: 5%;
+overflow-x: hidden;
+ }
+
+.sidenav {
+    height: auto; /* Full-height: remove this if you want "auto" height */
+    width: 15%; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color:transparent;
+    margin-top: 5%;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+   
+   
+  }
+  
+
+
+  .dropdown .btn{
+    margin-left: 1%;
+    font-size: 1.2rem;
+  }
+  
+  /* The navigation menu links */
+  .dropdown-menu a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: tomato ;
+    display: block;
+    line-height: 120%;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color:tomato;
+
+  }
+  .btn-form{
+    padding: 6px;
+    border:1px solid orangered;
+    background-color: transparent;
+  }
+  .btn-form:hover{
+    background-color: orangered;
+    }
+  
+  /* Style page content */
+  .main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  .item-details{
+    width: 85%;
+    
+
+  }
+
+
+
+  .box{
+    width: 23%;
+   background-color: white;
+   margin-right: 5%;
+   padding: 1%;
+   margin-bottom: 5%;
+  }
+
+.box img{
+  width: 100%;
+  height: 200px;
+  margin-right: 25px;
+  text-align: center;
+
+}
+.row .items{
+  margin-left:30%;
+
+}
+
+.item-price,
+.item-name{
+  font-weight: 400;
+  font-size: 1rem;
+  
+}
+.item-price{
+  color: rgb(218, 37, 37);
+}
+.item-name:hover{
+  color: rgb(187, 14, 14);
+}
+
+.change-page-btn{
+  text-align: center;
+  margin-left: 13%;
+
+}
+.back,
+.next,
+.count-page{
+  padding: 1.5%;
+  background-color: transparent;
+  border: 2px solid tomato;
+}
+.back{
+  border-left: none;
+}
+.next{
+  border-right: none;
+}
+.ion-arrow-left-b:hover,
+.ion-arrow-left-b:active,
+.ion-arrow-right-b:hover,
+.ion-arrow-right-b:active{
+  color: tomato;
+}
+
+  footer{
+    padding: 1%;
+    background-color: rgb(95, 93, 93);
+    height: 30vh;
+  }
+  .footer-nav li{
+    list-style: none;
+    float: left;
+    
+    
+  }
+  .footer-nav li:first-child{
+    margin-left: 30px;
+  }
+  
+  
+  .social-links li{
+    list-style: none;
+    float: right;
+  }
+  
+  .social-links li:last-child{
+    margin-right: 30px;
+  }
+  
+  .social-links li,
+  .footer-nav li{
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: 400;
+   
+  }
+  .social-links li a:link,
+  .social-links li a:visited,
+  .footer-nav li a:link,
+  .footer-nav li a:visited{
+    text-decoration: none;
+    color: rgb(53, 53, 53);
+    transition: color 1s;
+  
+  }
+   footer  p{
+    margin: auto;
+     padding-top: 3px;
+     font: size 0.9rem; ;
+    text-align: center;
+  }
+  footer p span{
+    color: white;
+  }
+  
+  .footer-nav li a:hover,
+  .footer-nav li a:active{
+    font-size: 1.1rem;
+    color: white;
+  }
+  
+   .ion-social-facebook:hover,
+  .ion-social-facebook:active{
+    font-size:1.2rem ;
+    color: rgb(71, 71, 252);
+  } 
+  
+  .ion-social-twitter:hover,
+  .ion-social-twitter:visited{
+    font-size:1.2rem ;
+    color: rgb(86, 193, 255);
+  }
+  .ion-social-instagram:hover,
+  .ion-social-instagram:active{
+    font-size:1.2rem ;
+    color: rgb(248, 4, 248);
+  }
+  .ion-social-googleplus:hover,
+  .ion-social-googleplus:active{
+    font-size:1.2rem ;
+    color: rgb(235, 17, 17);
+  
+  }

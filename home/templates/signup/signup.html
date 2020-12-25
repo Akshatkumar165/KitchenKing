@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'signup/css/signup.css' %}">
+    <title>kodHUB</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="contents">
+            <h2 class="login">Signup</h2>
+            <form action="" method="POST">
+            {% csrf_token %}
+            <div class="infodiv">
+                {% if form.errors %}
+                <div class="infodiv">
+                <p>{{form.errors}}</p>
+                </div>
+                {% endif %}
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">Username</span>
+                    <div class="input_class">
+                        <input type="text" class="form-input" placeholder="Ex:Petter@123" name='username'>
+                        <span class="focus-border"></span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">First Name</span>
+                    <div class="input_class">
+                        <input type="text" class="form-input" placeholder="Ex:Petter" name='first_name'>
+                        <span class="focus-border"></span>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">Last Name</span>
+                    <div class="input_class">
+                        <input type="text" class="form-input" placeholder="Ex:Josh" name='last_name'>
+                        <span class="focus-border"></span>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">Email</span>
+                    <div class="input_class">
+                        <input type="email" class="form-input" placeholder="Ex: joshpeck22@kodehub.com" name='email'>
+                        <span class="focus-border"></span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">Password</span>
+                    <div class="input_class">
+                        <input type="password" class="form-input" placeholder="Your Password" name='password1'>
+                        <span class="focus-border"></span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">Re-enter Password</span>
+                    <div class="input_class">
+                        <input type="password" class="form-input" placeholder="Your Password" name='password2'>
+                        <span class="focus-border"></span>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-addon">Phone Number</span>
+                    <div class="input_class">
+                        <input type="number" class="form-input" placeholder="Ex:9876543210" name='phone'>
+                        <span class="focus-border"></span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">Address</span>
+                    <div class="input_class">
+                        <input type="text" class="form-input" placeholder="Ex:S20 MLB colony, gwalior" name='address'>
+                        <span class="focus-border"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="buttonsign">
+                <button class="buttonsub" type="submit">Signup</button>
+            </div>
+            </form>
+            <div class="sign_text">
+                <h5>Sign up to open Your Free account<br>or<a href="{% url 'login' %}"> Log in </a>to
+                    access your account</h5>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

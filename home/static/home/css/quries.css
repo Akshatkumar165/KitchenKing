@@ -1,0 +1,257 @@
+@media(max-width : 1290px){
+    .section-cities .row {
+        
+        margin-left: 10%;
+      }
+      
+}
+@media(max-width : 1160px){
+    .shorth1{
+      border-bottom: none;
+        }
+     
+      .section-cities .row {
+         margin-left: 8%;
+      }
+      .icon-big{
+        font-size: 2rem;
+         margin-bottom: 10px;
+        }
+      .section-features .row .box p{
+        line-height: 120%;
+        letter-spacing: 1px;
+        word-spacing: 1.5px;
+      }
+     
+      
+}
+
+@media(max-width : 948px ){
+    .shorth1{
+      font-size: 2.5rem;
+    }
+    .shorth2{
+       font-size: 1.6rem;
+      }
+      .section-features{
+        height: 90vh;
+    }
+    .section-features .row .box h3{
+        font-size: 1.3rem;
+        font-style: bold;
+    }
+    .long-copy{
+        padding: 10px;
+    }
+    .section-cities .row {
+        margin-left: 6%;
+     }
+    .footer-nav li a{
+        
+        margin-right: -5px;
+        font-weight: 400;
+        font-size: .8rem;
+
+     }
+     .footer-nav li:first-child{
+        margin-left: 10px;
+      }
+      .form-control {
+       
+        width: 60%;
+        height: 30px;
+        padding: 0;
+        padding-left: 4px;
+      }
+    .btn {
+       padding: 2px;
+    }
+    .section-cities{
+        height: 70vh;
+        padding-top: 20px;
+      }
+      .animated{
+       height: 80vh;
+       }
+
+}
+
+@media(max-width:786px){
+    .shorth1{
+      font-size: 2rem;
+      }
+      .shorth2{
+        font-size: 1.4rem;
+      }
+      .section-cities .row {
+        margin-left: 4%;
+     }
+
+      .section-features .row .box {
+        line-height: 100%;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+      }
+      .section-features{
+          height: 90vh;
+      }
+      .section-features .row .box {
+        margin-left: 20px;
+        margin-top: 15px;
+        margin-right: 15px;
+      }
+     
+      .footer-nav li a{
+         margin-right: -5px;
+         font-weight: 400;
+         font-size: 0.6rem;
+      }
+      .footer-nav li:first-child{
+        margin-left: 10px;
+        }
+        .footer-nav li a:hover,
+        .footer-nav li a:active{
+            font-size: 0.7rem;
+            color: white;
+        }
+      footer  p{
+        font: size 0.7rem; 
+      }
+      .form-control {
+         width: 50%;
+        height: 25px;
+        padding: 0;
+        padding-left: 3px;
+        /* font-size: 1rem; */
+      }
+      .btn {
+       padding: 0px;
+       margin-left: 55px;
+       margin-top: 15px;
+      }
+      .form-p{
+       margin-top: 10px;
+        font-size: 1rem;
+        word-spacing: 1.5px;
+        margin-bottom: 10px;
+      }
+      .section-cities{
+        height: 60vh;
+        padding-top: 20px;
+      }
+      .animated{
+        height: 75vh;
+      }
+      .form-image{
+  
+        width: 40%;
+        height: auto;
+        margin-top: 15px;
+      }
+}
+@media (max-width: 689px){
+  .form-image{
+  
+    width: 50%;
+  }
+  .section-features .row .box {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 90%;
+  }
+  .shorth1{
+    font-size: 1.5rem;
+    }
+  .section-features .row .box:first-child{
+    margin-left: 20px;
+   
+  }
+  .section-features .row .box:last-child{
+    margin-right: 20px;
+  }
+  .form-control {
+    width: 50%;
+   height: 25px;
+   padding: 0;
+   padding-left: 3px;
+   font-size: 0.7rem;
+   line-height: 90%;
+ }
+ .btn {
+  padding: 1px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  font-size: 0.7rem;
+
+ }
+ .section-features .row .box h3{
+  font-size: 1.1rem;
+  font-style: bold;
+  word-spacing: 1px;
+}
+  
+}
+@media (max-width: 550px){
+  .shorth1{
+    font-size: 1.3rem;
+    }
+ 
+  .col{
+    flex-basis: auto;
+    display: flex;
+    float:none;
+  }
+  .span-1-of-3{
+    width: 50%;
+    margin-left: 16% ;
+    margin-right: 16% ;
+
+  }
+.section-features{
+  height: 140vh;
+}
+
+.section-features .row .box{
+  margin-left: 16% ;
+    margin-right: 16%;
+    margin-top: 8%;
+}
+.section-features .row .box:first-child{
+  margin-left: 16%;
+}
+.section-features .row .box:last-child{
+  margin-right: 16%;
+}
+}
+@media (max-width: 393px){
+
+  .shorth1{
+    font-size: 1.2rem;
+    }
+  .section-features{
+    height: 140vh;
+  }
+  .footerP{
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+
+
+}
+@media (max-width: 329px){
+  .shorth1{
+    font-size: 1.1rem;
+    }
+  .section-features{
+    height: 140vh;
+  }
+  .footerP{
+    font-size: 0.7rem;
+    font-weight: 400;
+  }
+  .section-features{
+    height: 10vh;
+  }
+
+}

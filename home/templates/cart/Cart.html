@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'home/css/normalize.css' %}">
+  <link rel="stylesheet" href="{% static 'home/css/grid.css' %}">
+  <link rel="stylesheet" href="{% static 'home/css/ionicons.min.css' %}">
+    <link rel="stylesheet" type="text/css" href={% static 'cart/cart.css' %}>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;1,300;1,400&display=swap"
+        rel="stylesheet">
+
+    <title>Your shopping cart</title>
+</head>
+
+<body>
+    <section class="cart-page">
+        <div class="row">
+            <div class="col span-1-of-2">
+                <div class="sidenav">
+                    <h2 class="brand-name">KITCHENKING</h2>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Bakeware
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Moulds & tins</a>
+                            <a class="dropdown-item" href="#">Dishes</a>
+                            <a class="dropdown-item" href="#">Tools & Accesories</a>
+                            <a class="dropdown-item" href="#">Mixing Bowls</a>
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Cookware
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Couldrons</a>
+                                <a class="dropdown-item" href="#">chafing Dishes</a>
+                                <a class="dropdown-item" href="#">Egg pochers</a>
+                                <a class="dropdown-item" href="#">fish pochers</a>
+                                <a class="dropdown-item" href="#">fondue</a>
+                                <a class="dropdown-item" href="#">lids</a>
+                                <a class="dropdown-item" href="#">pots & pans</a>
+                                <a class="dropdown-item" href="#">tajines</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Gas Stoves
+                            </button>
+
+
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                containers
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Shakers</a>
+                                <a class="dropdown-item" href="#">Garbage bins</a>
+                                <a class="dropdown-item" href="#">Jars & containers</a>
+                                <a class="dropdown-item" href="#">Lunch boxes</a>
+                                <a class="dropdown-item" href="#">Storsge Bags</a>
+                                <a class="dropdown-item" href="#">Racks & Holder</a>
+                                <a class="dropdown-item" href="#">thermo & vaccum flask</a>
+                                <a class="dropdown-item" href="#">water bottels</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Kitchen Tools
+                            </button>
+
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Tableware
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Cultery & Flatware</a>
+                                <a class="dropdown-item" href="#">Garbage bins</a>
+                                <a class="dropdown-item" href="#">DinnerWare</a>
+                                <a class="dropdown-item" href="#">Serving pieces </a>
+                                <a class="dropdown-item" href="#">Glassware</a>
+                                <a class="dropdown-item" href="#">Drinkware</a>
+                                <a class="dropdown-item" href="#">Kitchen linen</a>
+
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Electronics
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">juicers</a>
+                                <a class="dropdown-item" href="#">Toasters</a>
+                                <a class="dropdown-item" href="#">Microwave ovens</a>
+                                <a class="dropdown-item" href="#">Expresso makers </a>
+                                <a class="dropdown-item" href="#">Kettels</a>
+                                <a class="dropdown-item" href="#">mixers</a>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col span-1-of-2  cart-items">
+                    <h3>Cart</h3>
+                    <div class="cart-item">
+                        <img src="resources/img/713t5XmivAL._SL1500_.jpg" alt="">
+                        <p class="item-name">6-Piece Non-stick & Microwave safe Bakeware Set</p>
+                        <p class="item-price"><span class="price">₹‎ 1069.00</span></p>
+                        <div class="button">
+
+                            <button class="remove">Remove</button>
+                            <button class="checkout">Checkout</button>
+
+                        </div>
+
+                    </div>
+
+                    <!-- <div class="empty">
+                        <p class="empty-text">There's no item in your cart</p>
+                        <a href="http://127.0.0.1:5500/imagespage.html">Continue Shopping</a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+
+.first-section{
+    background-color: rgb(255, 255, 255);
+}
+.background {
+    height: 400vh;
+    position: absolute;
+    display:block;
+    top : 0;
+    left: 0; 
+   z-index: 0;
+    }
+    nav{
+        background-color:black;
+        font-size: 1.2rem;
+      }
+.sidenav{
+    margin-top: 5%;
+    margin-left: 0%;
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+}
+/* .col:first-child .sidenav{
+    border-right: 1px solid gray;
+} */
+.brand-name{
+    font-size: 1.5rem;
+    margin-left: 2%;
+    font-style: oblique;
+    color: rgb(252, 188, 49);
+    font-weight: 400;
+}
+
+ .dropdown .btn{
+    margin-left: 1%;
+    font-size: 1.2rem;
+  }
+
+  .dropdown-menu a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: tomato ;
+    display: block;
+    line-height: 120%;
+  }
+  .item-images{
+      width: 65%;
+      margin-top: 5%;
+      margin-left: 10%;
+      padding-left: 15%;
+      text-align: center;
+    overflow: hidden;
+}
+.col {
+    flex-basis: auto;
+    
+}
+.item-img{
+    width: 80%;
+    text-align: center;
+       
+     }
+  .box{
+      padding: 2%;
+      width: 100%;
+      margin-bottom: 25%;
+      
+     }
+.box img{
+      width: 80%;
+      height: auto;
+  }
+  .back-to-top{
+      text-align: right;
+      margin-bottom: 20%;
+  }
+  .ion-android-arrow-forward{
+      margin-left: 5px;
+  }
+  .item-spec{
+      width: 20%;
+      text-align: center;
+      font-size: 1.3rem;
+      border-left: 1px solid gray;
+      position: relative;
+      margin-left: 5%;
+     
+  }
+  .cart-icon a{
+      text-decoration: none;
+      text-align: center;
+      color: coral;
+       }
+.cart-icon a i{
+    font-size: 2rem;
+}
+.cart-icon a i .cart-value{
+    margin-left: 7px;
+}
+.store-name{
+    margin-top: 5%;
+    font-size: .9rem;
+    text-align: left;
+    color: royalblue;
+}
+.store-name:hover{
+    color: coral;
+    text-decoration: underline;
+}
+.ion-chevron-right{
+    margin-right: 5px;
+}
+.sidenav-img {
+    margin-left: 0%;
+    width: 120%;
+    padding: 10%;
+  margin-top: 3%;
+  border: 2px solid rgb(252, 141, 51);
+  border-radius: 10px;
+  overflow-x: hidden;
+  
+    
+}
+.item-name{
+    margin-top: -20%;
+    font-size: 1rem;
+    text-align: left;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    line-height: 110%;
+    /* font-weight: bold; */
+}
+.item-price{
+    margin-top: -5%;
+    color: gray;
+    font-size: 1rem;
+    text-align: left;
+}
+.price{
+    font-size: 1.4rem;
+    color: coral;
+}
+.f-d {
+    margin-top: -5%;
+    font-size: 1rem;
+    text-align: left;
+    font-weight: bold;
+    font-style: italic;
+}
+.f-d .ion-chevron-right{
+    margin-left: -7px;
+}
+.stock{
+    margin-top: -5%;
+    text-align: left;
+    font-size: 1.2rem;
+    color: green;
+}
+.dropdown .btn {
+    margin-left: 1%;
+    font-size: 1.2rem;
+ }
+ 
+  .discription-points{
+      font-size: 0.9rem;
+  }
+  .button{
+      margin-top: 2%;
+      padding-top: 2%;
+      padding-bottom: 2%;
+      padding-left: 15%;
+      padding-right: 15%;
+      border: 1px solid rgb(255, 196, 0);
+      border-radius: 10px;
+  }
+  .buy-now{
+      padding-right: 20%;
+      padding-left: 20%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      background-color: rgb(255, 208, 0);
+  }
+  .buy-now:hover{
+      background-color: rgb(245, 191, 42);
+  }
+  .Add{
+      background-color: rgb(248, 187, 54);
+  }
+  .Add:hover{
+      background-color: rgb(255, 208, 0);
+  }

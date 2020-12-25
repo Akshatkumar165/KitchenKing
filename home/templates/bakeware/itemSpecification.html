@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'home/css/ionicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'home/css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'bakeware/itemSpecification.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <title>item-Specification</title>
+</head>
+
+<body>
+    <section class="first-section">
+        <nav class="navbar fixed-top navbar-expand-md navbar-light ">
+            <a class="brand-name" href="#">Kitchenking</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="cart-icon"> <a href="{% url 'cart' %}"><i class="ion-ios-cart"> &colon;<span
+                                    class="cart-value">0</span></i></a></li>
+
+                </ul>
+            </div>
+
+        </nav>
+
+        <div class="row">
+            <div class="col span-1-of-3">
+                <div class="sidenav">
+
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Bakeware
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Moulds & tins</a>
+                            <a class="dropdown-item" href="#">Dishes</a>
+                            <a class="dropdown-item" href="#">Tools & Accesories</a>
+                            <a class="dropdown-item" href="#">Mixing Bowls</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Cookware
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Couldrons</a>
+                            <a class="dropdown-item" href="#">chafing Dishes</a>
+                            <a class="dropdown-item" href="#">Egg pochers</a>
+                            <a class="dropdown-item" href="#">fish pochers</a>
+                            <a class="dropdown-item" href="#">fondue</a>
+                            <a class="dropdown-item" href="#">lids</a>
+                            <a class="dropdown-item" href="#">pots & pans</a>
+                            <a class="dropdown-item" href="#">tajines</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Gas Stoves
+                        </button>
+
+
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            containers
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Shakers</a>
+                            <a class="dropdown-item" href="#">Garbage bins</a>
+                            <a class="dropdown-item" href="#">Jars & containers</a>
+                            <a class="dropdown-item" href="#">Lunch boxes</a>
+                            <a class="dropdown-item" href="#">Storsge Bags</a>
+                            <a class="dropdown-item" href="#">Racks & Holder</a>
+                            <a class="dropdown-item" href="#">thermo & vaccum flask</a>
+                            <a class="dropdown-item" href="#">water bottels</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Kitchen Tools
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Cultery & Flatware</a>
+                            <a class="dropdown-item" href="#">Garbage bins</a>
+                            <a class="dropdown-item" href="#">DinnerWare</a>
+                            <a class="dropdown-item" href="#">Serving pieces </a>
+                            <a class="dropdown-item" href="#">Glassware</a>
+                            <a class="dropdown-item" href="#">Drinkware</a>
+                            <a class="dropdown-item" href="#">Kitchen linen</a>
+
+                        </div>
+
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Tableware
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Cultery & Flatware</a>
+                            <a class="dropdown-item" href="#">Garbage bins</a>
+                            <a class="dropdown-item" href="#">DinnerWare</a>
+                            <a class="dropdown-item" href="#">Serving pieces </a>
+                            <a class="dropdown-item" href="#">Glassware</a>
+                            <a class="dropdown-item" href="#">Drinkware</a>
+                            <a class="dropdown-item" href="#">Kitchen linen</a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="col span-1-of-3 item-images">
+                <div class="col span-1of-1 item-img">
+                    {% if obj.0.img1 %}
+                    <div class="box">
+                        <img src="{{obj.0.img1.url}}" alt="">
+                    </div>
+                    {% endif %}
+                    {% if obj.0.img2 %}
+                    <div class="box">
+                        <img src="{{obj.0.img2.url}}" alt="">
+                    </div>
+                    {% endif %}
+                    {% if obj.0.img3 %}
+                    <div class="box">
+                        <img src="{{obj.0.img3.url}}" alt="">
+                    </div>
+                    {% endif %}
+                    {% if obj.0.img4 %}
+                    <div class="box">
+                        <img src="{{obj.0.img4.url}}" alt="">
+                    </div>
+                    {% endif %}
+                    {% if obj.0.img5 %}
+                    <div class="box">
+                        <img src="{{obj.0.img5.url}}" alt="">
+                    </div>
+                    {% endif %}
+                    <a href="#" class="back-to-top">Back to top<i class="ion-android-arrow-forward"></i></a>
+                </div>
+
+            </div>
+
+
+            <div class="col span-1-of-3 item-spec">
+                <div class="sidenav">
+                    <p class="store-name"><i class="ion-chevron-right"></i>visit the kitchenking store</p>
+                    <div class="box">
+                        <div class="sidenav-img">
+                            <img src="{{obj.0.img1.url}}" alt="">
+                        </div>
+                    </div>
+                    <p class="item-name">{{obj.0.name}}</p>
+                    <p class="item-price">price: <span class="price">₹‎ {{obj.0.price}}</span></p>
+                    <p class="f-d">Delivery:<i class="ion-chevron-right"></i><i class="ion-chevron-right"></i>{% if obj.1.delivery %}<span class="price">₹‎ {{obj.1.delivery}}</span>{% else %} Free Delivery{% endif %}</p>
+                    <p class="stock">
+                    {% if obj.0.stock %}
+                    In Stock.
+                    {% else %}
+                    Out of Stock.
+                    {% endif %}
+                    </p>
+                    <div class="dropdown ">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Discription
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <ul class=" dropdowm-item discription-points">
+                                {% if obj.0.des_line1 %}
+                                <li>{{obj.0.des_line1}}</li>{% endif %}
+                                {% if obj.0.des_line2 %}
+                                <li> {{obj.0.des_line2}}</li>{% endif %}
+                                {% if obj.0.des_line3 %}
+                                <li> {{obj.0.des_line3}}</li>{% endif %}
+                                {% if obj.0.des_line4 %}
+                                <li>{{obj.0.des_line4}}</li>{% endif %}
+                                {% if obj.0.des_line5 %}
+                                <li> {{obj.0.des_line5}}</li>{% endif %}
+                            </ul>
+                        </div>
+                    </div>
+                    <button class=" button buy-now">Buy Now</button>
+                    <button class=" button Add">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    <script src="resources/js/itemSpec.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

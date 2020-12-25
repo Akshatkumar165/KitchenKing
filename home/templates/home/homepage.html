@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'home/css/normalize.css' %}">
+  <link rel="stylesheet" href="{% static 'home/css/grid.css' %}">
+  <link rel="stylesheet" href="{% static 'home/css/ionicons.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'home/css/home.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'home/css/quries.css' %}">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;1,300;1,400&display=swap"
+    rel="stylesheet">
+
+
+  <title>Kitchenking</title>
+
+</head>
+
+<body>
+  <!-- navigation bar -->
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark ">
+      <a class="navbar-brand" href="#">Kitchenking</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Product-categories</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="{% url 'products' %}">Cookware</a>
+              <a class="dropdown-item" href="{% url 'bakeware' %}">Bakeware</a>
+              <a class="dropdown-item" href="{% url 'products' %}">GasStoves</a>
+              <a class="dropdown-item" href="{% url 'products' %}">storage & container</a>
+              <a class="dropdown-item" href="{% url 'products' %}">Kitchen tools</a>
+              <a class="dropdown-item" href="{% url 'products' %}">Tableware</a>
+              <a class="dropdown-item" href="{% url 'products' %}">Electronics</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="{% url 'signup' %}">SignUp </a></li>
+          <li><a href="{% url 'login' %}">Login</a></li>
+        </ul>
+
+      </div>
+    </nav>
+  </header>
+  <!-- Full-width images with number and caption text -->
+  <section class="animated">
+    <div class="background-box">
+      <h1 class="shorth1">Kitchenking! heart of the home</h1>
+
+    </div>
+  </section>
+  <section class="section-features">
+
+    <h2 class="shorth2"> &mdash; The best Online shopping Store</h2>
+    <p class="long-copy">Hello, we’re Kitchenking, your new premium online shopping store We know you’re always
+      busy. No time for shopping. So let us take care of that, we’re really good at it, we promise!</p>
+
+    <div class="row">
+      <div class="col span-1-of-3 box">
+        <i class="ion-ios-infinite-outline icon-big"></i>
+        <h3>Up to 365 Days/year</h3>
+        <p>Never go on stores again! We really mean that. Our application plans include up to 365 days/year coverage.
+          You can also choose to order more flexibly if that's your style.
+        </p>
+      </div>
+      <div class="col span-1-of-3 box">
+        <i class="ion-clock icon-big"></i>
+        <h3>Get in 2 Days</h3>
+        <p>You're only 2 days away from your precious and useful delivered right to your
+          home. We work with the best stores in each town to ensure that you're 100% happy.
+        </p>
+      </div>
+
+      <div class="col span-1-of-3 box">
+        <i class="ion-ios-cart icon-big"></i>
+        <h3>Order Anything</h3>
+        <p> We don't limit your creativity, which means you can order whatever you feel like. You can also
+          choose from our list containing over 1000 products. It's up to you!
+        </p>
+      </div>
+
+    </div>
+  </section>
+  <section class="section-cities">
+    <h2 class="shorth2">We're currently in the City</h2>
+    <div class="city_box">
+      <form class="find_city">
+        <input class="city_input" type="search" placeholder="Search City" aria-label="Search">
+        <button class="src_button" type="submit">Search</button>
+      </form>
+    </div>
+
+    <div class="city_image">
+      <img src="{% static 'home/css/img/GWALIOR.jpg' %}" class="form-image" alt="city-gwalior">
+      <p class="form-p">Yes, we present in your city <strong>"GWALIOR"</strong> </p>
+
+    </div>
+  </section>
+  <footer>
+    <div class="row">
+      <div class="col span-1-of-2">
+        <ul class="footer-nav">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">privacy/ploicy</a></li>
+          <li><a href="#">Terms & condition</a></li>
+        </ul>
+
+      </div>
+      <div class="col span-1-of-2">
+        <ul class="social-links">
+          <li><a href=""><i class="ion-social-facebook"></i></a></li>
+          <li><a href=""><i class="ion-social-twitter"></i></a></li>
+          <li><a href=""><i class="ion-social-instagram"></i></a></li>
+          <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <p class="footerP">
+        Copyright <span>&copy;</span> 2020 by Kitchenking. All Right Reseverd.
+      </p>
+    </div>
+  </footer>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
